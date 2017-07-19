@@ -7,7 +7,7 @@ module.exports = function(app) {
   });
 
   router.post('/api/authenticate', (req, res) => {
-    res.send('API works');
+    res.send('authenticated');
   });
 
   return router;
