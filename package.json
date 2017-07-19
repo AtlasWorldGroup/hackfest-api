@@ -1,0 +1,21 @@
+{
+  "name": "hackfest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Kempf",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "express-jwt": "^5.3.0",
+    "jwks-rsa": "^1.2.0",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.11.3"
+  }
+}
