@@ -10,6 +10,13 @@ module.exports = function (app) {
     /** Subscriptions...Had to put here cuz my routes wasn't working for some reason???
      *
      */
+    router.get('/api/subscriptions', (req, res) => {
+        Subscription.find({}, (err, subscription) => {
+            if (err) return res.sendStatus(500);
+            return res.send(subscription);
+        })
+    });
+
     router.post('/api/subscriptions', (req, res) => {
         let subscription = new Subscription(req.body);
         if (subscription) {
